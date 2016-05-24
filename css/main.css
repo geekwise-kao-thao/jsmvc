@@ -1,0 +1,16 @@
+body{
+    background-color: coral;
+    text-align: center;
+
+}
+
+input{
+    border-radius: 10px;
+    height: 70px;
+    width:50%;
+    font-size:160%;
+    text-align: center;
+}
+input:hover{
+    cursor: default;
+}
