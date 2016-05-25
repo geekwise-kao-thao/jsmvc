@@ -1,7 +1,6 @@
 body{
     background-color: coral;
     text-align: center;
-
 }
 
 input{
@@ -13,4 +12,8 @@ input{
 }
 input:hover{
     cursor: default;
+}
+
+p{
+    font-size:2rem;
 }

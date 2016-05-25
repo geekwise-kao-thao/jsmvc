@@ -27,10 +27,6 @@ var display_names = function (){
     });
 };
 
-var display_none_names = function(event){
-    event.currentTarget.style.display = "none";
-};
-
 document.addEventListener('DOMContentLoaded', function (event) {
 
     create_view_elements('h1','caption_1','Type in name then press ENTER');
@@ -40,5 +36,20 @@ document.addEventListener('DOMContentLoaded', function (event) {
     get_element('input_box').setAttribute('placeholder','First Name');
 
     display_names();
-
+    
+    document.body.addEventListener("click", function(event) {
+        
+        if (event.target.nodeName == "P"){
+            
+            event.target.remove();
+            
+            for(var i=0; i<name_array.length; i++){
+                if(name_array[i] === event.target.innerHTML.toString()){
+                    name_array.splice(i,1);
+                    //return name_array;
+                    console.log(name_array);
+                };
+            };
+        }
+    });
 });
