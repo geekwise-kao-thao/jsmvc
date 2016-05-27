@@ -37,3 +37,22 @@ var add_info_array = [
     '',
     'add field'
 ];
+
+// array of content for containers after clicking on add phone
+
+    var label_array = [
+        'home',
+        'work',
+        'iphone',
+        'mobile',
+        'main',
+        'home fax',
+        'work fax',
+        'pager',
+        'other'
+    ];
+
+
+
+
+
