@@ -190,18 +190,7 @@ var add_text_content = function (){
        };
     });
     
-    create_containers('label','add_photo_label',get_element('left_input_section_container_div'));
-    get_element('add_photo_label').setAttribute('for','camera_input');
-    get_element('add_photo_label').textContent = 'add photo';
     
-    create_element('input',{id:'camera_input'});    
-        
-    set_value('camera_input',{
-                                  
-        placeholder:'insert photo',
-        type:'file',
-        accept:'audio/*;capture=microphone'
-    });
     
 // Creating input elements for:  First Name, Last Name, and Company    
 

@@ -37,7 +37,11 @@ document.addEventListener('DOMContentLoaded',function(event){
         
     });
     
-    load('view.js',function() {
+    load('/view/view.js',function() {
+        
+    });
+    
+    load('/view/view.add.photo.js',function() {
         
     });
     
