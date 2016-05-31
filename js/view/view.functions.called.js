@@ -1,53 +1,53 @@
-    create_containers('div','contact_container',document.body);
-    create_containers('div','top_row_container',get_element('contact_container'));
-    
-    create_multi_elements(3,'span','top_row_element_',get_element('top_row_container'));
-    create_containers('div','search_container',get_element('contact_container'));
-    create_containers('div','names_container',get_element('contact_container'));
-    create_containers('div','right_column_letters_container',get_element('contact_container'));
-    
-    create_containers('span','search_icon',get_element('search_container'));
-    get_element('search_icon').setAttribute('class','fa fa-search');
-    create_containers('input','search',get_element('search_container'));
-    
-    get_element('search').setAttribute('placeholder','Search');
-    
-    create_containers('div','search_cancel',get_element('search_container'));
-    get_element('search_cancel').textContent = 'Cancel';
-    
-    //search input animation
-    
-    click_cancel_button();
-    
-    click_search();
-    
-    get_element('top_row_element_0').textContent = 'Groups';;
-    get_element('top_row_element_1').textContent = 'All Contacts';;
-    var plus_button = get_element('top_row_element_2');
-    plus_button.textContent = '+';
+create_containers('div','contact_container',document.body);
+create_containers('div','top_row_container',get_element('contact_container'));
+
+create_multi_elements(3,'span','top_row_element_',get_element('top_row_container'));
+create_containers('div','search_container',get_element('contact_container'));
+create_containers('div','names_container',get_element('contact_container'));
+create_containers('div','right_column_letters_container',get_element('contact_container'));
+
+create_containers('span','search_icon',get_element('search_container'));
+get_element('search_icon').setAttribute('class','fa fa-search');
+create_containers('input','search',get_element('search_container'));
+
+get_element('search').setAttribute('placeholder','Search');
+
+create_containers('div','search_cancel',get_element('search_container'));
+get_element('search_cancel').textContent = 'Cancel';
+
+//search input animation
+
+click_cancel_button();
+
+click_search();
+
+get_element('top_row_element_0').textContent = 'Groups';;
+get_element('top_row_element_1').textContent = 'All Contacts';;
+var plus_button = get_element('top_row_element_2');
+plus_button.textContent = '+';
 
 // plus_button event displaying New Contact display screen
 
-    click_plus_button();
+click_plus_button();
 
-    create_abc_containers();
-    create_right_column_letters();
-    
-    create_containers('p','hastag',get_element('right_column_letters_container'));
-    get_element('hastag').textContent = '#';
+create_abc_containers();
+create_right_column_letters();
+
+create_containers('p','hastag',get_element('right_column_letters_container'));
+get_element('hastag').textContent = '#';
 
 // create array for all the letter_container id's
 
-    create_inner_contact_container();
+create_inner_contact_container();
     
 // Creating New Contact display screen
 
-    create_containers('div','new_contact_container',document.body);
-    create_containers('div','second_top_row_container',get_element('new_contact_container'));
-    create_containers('div','second_screen_input_section_container',get_element('new_contact_container'));
-    create_containers('div','left_input_section_container_div',get_element('second_screen_input_section_container'));
-    create_containers('div','right_input_section_container_div',get_element('second_screen_input_section_container'));
-    
+create_containers('div','new_contact_container',document.body);
+create_containers('div','second_top_row_container',get_element('new_contact_container'));
+create_containers('div','second_screen_input_section_container',get_element('new_contact_container'));
+create_containers('div','left_input_section_container_div',get_element('second_screen_input_section_container'));
+create_containers('div','right_input_section_container_div',get_element('second_screen_input_section_container'));
+
 // Creating span elements for: Cancel, All Contact and Done
 
     create_multi_elements(3,'span','second_top_row_element_',get_element('second_top_row_container'));
@@ -57,12 +57,17 @@
     update_element_properties('second_top_row_element_2','Done','done_button');
     
     cancel_button().textContent = 'Cancel';
-    cancel_button().addEventListener('click',function(event){
-       get_element('contact_container').style.display = 'inline-block';
-       if(get_element('contact_container').style.display === 'inline-block'){
-           get_element('new_contact_container').style.display = 'none';
-       };
-    });
+    
+    var click_top_cancel_button = function(){
+        cancel_button().addEventListener('click',function(event){
+           get_element('contact_container').style.display = 'inline-block';
+           if(get_element('contact_container').style.display === 'inline-block'){
+               get_element('new_contact_container').style.display = 'none';
+           };
+        });
+    };
+    
+    click_top_cancel_button();
     
 // Creating input elements for:  First Name, Last Name, and Company    
 
