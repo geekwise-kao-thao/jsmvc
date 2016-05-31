@@ -37,7 +37,15 @@ document.addEventListener('DOMContentLoaded',function(event){
         
     });
     
-    load('view/view.js',function() {
+    load('view/view.functions.js',function() {
+        
+    });
+    
+    load('view/view.functions.called.js',function() {
+        
+    });
+    
+    load('view/view.handler.js',function() {
         
     });
     
