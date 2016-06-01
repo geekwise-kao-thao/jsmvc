@@ -58,18 +58,21 @@ input{
 #contact_container{
     background-color:white;
     width:40rem;
-    height:auto;
+    height:860px;
     text-align: center;
     box-shadow: 3px 3px 5px 3px grey;
+    position:relative;
 }
 
 #top_row_container{
     width:100%;
-    height:25%;
+    height:12.4%;
     margin-top:0rem;
     font-size:2.2rem;
     border-bottom: 1px solid #7E7D82;
     background-color:#F7F7F7;
+    position:absolute;
+    left:0;
 }
 
 #top_row_container > span{
@@ -102,6 +105,9 @@ input{
     height:3.5rem;
     background-color:#CAC9CE;
     border-bottom: 1px solid #B6B5B9;
+    position:absolute;
+    top:99px;
+    left:0;
 }
 
 #search{
@@ -120,8 +126,8 @@ input{
 }
 #search_icon { 
     position: absolute;
-    top: 9.8%;
-    left: 31%;
+    top: 30.8%;
+    left: 38%;
     font-size: 22px;
     color: #A9A9A9;
 }
@@ -141,9 +147,12 @@ input{
         -ms-transition:     opacity .5;
 }
 #names_container{
-    height:auto;
+    height:690px;
     width:96%;
     float:left;
+    position:relative;
+    top:170px;
+    overflow:scroll;
 }
 
 div[id^=abc_container_]{
@@ -160,6 +169,7 @@ p[id^=letter_container_]{
     height:3.5rem;
     padding-left:2rem;
     text-align: left;
+    width:100%;
 }
 
 p[id^=full_name_container_]{
@@ -185,9 +195,9 @@ p[id^=full_name_container_]{
     color: #0D7CE3;
     font-size:20px;
     font-weight: 600;
-    margin-top:4%;
-    position:fixed;
-    right:28.5%;
+    margin-top:30%;
+    position:absolute;
+    right:0;
     
 }
 
@@ -405,6 +415,7 @@ div[id^=add_more_info_container_]{
 }
 
 /*media querry side by side fix*/
+/*
 @media only screen 
 and (max-width : 1280px){
     #contact_container{
@@ -437,8 +448,10 @@ and (max-width : 1280px){
     box-shadow:none;
    } 
 }
-
+*/
 /*media querry font fix*/
+
+/*
 @media only screen
 and (max-width : 1250px){
     #top_row_container{
@@ -463,8 +476,11 @@ and (max-width : 1250px){
        right:-5%;
    }
 }
+*/
 
 /*media querry font fix*/
+
+/*
 @media only screen
 and (max-width : 965px){
     #add_more_info_container_0{
@@ -486,8 +502,11 @@ and (max-width : 965px){
     }
     
 }
+*/
 
 /*media querry font fix*/
+
+/*
 @media only screen
 and (max-width : 900px){
      #top_row_element_0{
@@ -501,8 +520,11 @@ and (max-width : 900px){
     font-size:2.5rem;
     }
 }
+*/
 
 /*for portrait*/
+
+/*
 @media only screen 
 and (max-width : 500px){
    #contact_container{
@@ -574,8 +596,12 @@ and (max-width : 500px){
       font-size:1rem;
   }
 }
+*/
+
 
 /* media querry smartphone portrait*/
+
+/*
 @media only screen 
 and (max-width : 400px) {
  #contact_container{
@@ -637,7 +663,9 @@ and (max-width : 400px) {
   }
  
 }
+*/
 
+/*
 @media only screen 
 and (max-width : 250px){
    #top_row_element_0{
@@ -685,7 +713,7 @@ and (max-width : 250px){
  }
 }
 
-
+*/
 
 
 
