@@ -34,15 +34,15 @@ create_abc_containers();
 
 // get_element('letter_container_0').style.position = 'fixed';
 // get_element('letter_container_0').style.left = '0';
-get_element('names_container').addEventListener('scroll',function(event){
+// get_element('names_container').addEventListener('scroll',function(event){
     
-    if(get_element('names_container').scrollTop >= 0){
-        get_element('letter_container_0').style.position = 'absolute';
-        get_element('letter_container_0').style.top = '0';
-        get_element('letter_container_0').style.left = '0';
-        get_element('letter_container_0').offset().top = 40;
-    };
-});
+//     if(get_element('names_container').scrollTop >= 0){
+//         get_element('letter_container_0').style.position = 'absolute';
+//         get_element('letter_container_0').style.top = '0';
+//         get_element('letter_container_0').style.left = '0';
+//         get_element('letter_container_0').offset().top = 40;
+//     };
+// });
 
 // var scroll_names_container = function () {
     

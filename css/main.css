@@ -370,6 +370,7 @@ div[id^=add_more_info_container_]{
 
 .label_and_input_left_container{
     width:35%;
+    font-size:1rem;
 }
 
 .minus_container{
@@ -387,6 +388,10 @@ div[id^=add_more_info_container_]{
     color:#A9A9A9;
     padding-left: 15px;
     float: right;
+}
+
+div[id^=chevron_container_]{
+    padding-right: 5px;
 }
 
 
