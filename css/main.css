@@ -419,6 +419,59 @@ div[id^=chevron_container_]{
     padding-left: 35px;
 }
 
+/* media query redo starts */
+@media only screen 
+and (max-width : 400px){
+    
+    
+    #contact_container{
+    width:100%;
+    font-size:1.3rem;
+    }
+    #top_row_container{
+    font-size:1.3rem;
+    height:7%;
+    }
+    #top_row_element_2{
+        font-size:3rem;
+        margin-top:-6px;
+    }
+    #search_container{
+        top:61px;
+    }
+    #search_icon{
+        top: 24.8%;
+        left: 36%;
+        font-size: 16px;
+    }
+    #search{
+        font-size:1.3rem;
+    }
+    #names_container{
+        top:118px;
+    }
+    div[id^=abc_container_]{
+        font-size:2rem;
+    }
+    .inner_contact_container{
+        font-size:2rem;
+        margin-top:0;
+        padding-bottom: 0.5rem;
+    }
+    p[id^=letter_container_]{
+        height:2.5rem;
+    }
+    
+    #right_column_letters_container{
+        font-size:14px;
+        margin-top:38%;
+    }
+    
+    
+}
+
+
+
 /*media querry side by side fix*/
 /*
 @media only screen 
